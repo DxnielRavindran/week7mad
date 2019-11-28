@@ -1,15 +1,15 @@
 //
-//  ViewController.swift
-//  week7
+//  QRCodeReadercontrolller.swift
+//  Pods-week7
 //
-//  Created by MAD2_P03 on 26/11/19.
-//  Copyright © 2019 Daniel. All rights reserved.
+//  Created by MAD2_P03 on 28/11/19.
 //
 
+import Foundation
 import UIKit
-import QRCode
+import QRCodeReader
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class QRCodeViewcontroller: UIViewController, UITextFieldDelegate {
     
     
     override func viewDidLoad() {
@@ -23,11 +23,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        let qrcode = QRCode(txtfld.text!)
-        QrView.image = qrcode?.image 
+      
             return true
     }
     
     
 }
-
